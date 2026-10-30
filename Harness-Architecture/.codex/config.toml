@@ -1,0 +1,10 @@
+# Project-local read-only knowledge integration; no credentials.
+[mcp_servers.agent-knowledge]
+command = "/Users/macbook/.nvm/versions/node/v22.23.2/bin/node"
+args = ["/Users/macbook/Downloads/Agent-Knowledge-MCP/dist/src/index.js"]
+required = true
+startup_timeout_sec = 20
+tool_timeout_sec = 30
+
+[mcp_servers.agent-knowledge.env]
+AKM_CONFIG = "/Users/macbook/Downloads/Cofre do Pedro/AI-Agent-Ecosystem/08-Implementation/Validation-Results/Integracao-Clientes-2026-10-29.akm.json"

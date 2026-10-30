@@ -1,0 +1,22 @@
+{
+  "schema": "akm.runtime.v1",
+  "kind": "environment-manifest",
+  "generated_at": "2026-10-29T12:00:00.000Z",
+  "host": { "platform": "darwin", "release": "25.0.0", "os_version": "macOS 26.0", "arch": "x64", "cpus": 8, "cpu_model": "fixture", "mem_gb": 16, "node": "v22.0.0", "shell": "zsh" },
+  "execution_context": { "stdin_tty": false, "stdout_tty": false, "parent_chain": ["zsh"], "inside_maestri_terminal": false },
+  "clis": [
+    { "id": "claude", "found": true, "path": "~/.local/bin/claude", "version": "2.1.0 (Claude Code)", "auth": { "status": "authenticated", "method": "claude.ai", "plan": "pro", "evidence": "`claude auth status`" } },
+    { "id": "codex", "found": true, "path": "~/.local/bin/codex", "version": "codex-cli 0.1.0", "auth": { "status": "authenticated", "method": "chatgpt", "evidence": "`codex login status`" } },
+    { "id": "opencode", "found": true, "path": "~/bin/opencode", "version": "2.0.0", "auth": { "status": "not_authenticated", "evidence": "`opencode auth list`" } },
+    { "id": "gemini", "found": false }
+  ],
+  "mcp_configs": [ { "client": "claude-code (user)", "file": "~/.claude.json", "exists": true, "servers": ["exemplo-vault"] } ],
+  "apps": [ { "id": "maestri", "installed": true, "version": "0.57.1", "running": true, "note": "CLI só dentro do Maestri" } ],
+  "services": { "ollama": { "server": true, "models": ["qwen2.5:3b"] } },
+  "parallel_probe": { "processes": 4, "each_ms": 400, "wall_ms": 450, "parallel": true },
+  "capabilities": [
+    { "id": "terminal_commands", "label": "Executar comandos de terminal", "status": "yes", "evidence": "fixture" },
+    { "id": "concurrent_sessions", "label": "Coordenar sessões simultâneas", "status": "partial", "evidence": "fixture" }
+  ],
+  "notes": ["fixture de teste"]
+}

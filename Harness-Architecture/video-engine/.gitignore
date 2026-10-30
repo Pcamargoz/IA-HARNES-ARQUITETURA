@@ -1,0 +1,9 @@
+node_modules/
+out/
+voz/
+voz.json
+capturas/
+public/audio/
+public/telas/
+public/musica/
+.perfil-gravacao*/

@@ -1,0 +1,10 @@
+{
+  "nome": "Exemplo de voz para o VoiceStudio. Copie para voz.json. Para clonar uma voz, ponha a amostra em voz/ (fora do Git) e preencha ref_audio e ref_text; sem isso, a voz é desenhada pelo 'instruct'.",
+  "language": "pt",
+  "instruct": "male, adult, low pitch",
+  "seed": 640,
+  "speed": 0.9,
+  "num_step": 64,
+  "postprocess_output": true,
+  "denoise": true
+}

@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "hermes-vault": {
+      "type": "stdio",
+      "command": "node",
+      "args": [".mcp/src/index.mjs"],
+      "env": {}
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@0.0.83", "--isolated", "--headless"],
+      "env": {}
+    },
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/v2/mcp"
+    }
+  }
+}

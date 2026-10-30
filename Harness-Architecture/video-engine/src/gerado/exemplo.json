@@ -1,0 +1,109 @@
+{
+ "id": "exemplo",
+ "titulo": "Idempotency key",
+ "subtitulo": "Como evitar requisições duplicadas",
+ "trilha": "Design de APIs",
+ "proximo": "Versionamento de APIs",
+ "icone": "cadeado",
+ "trechos": [
+  {
+   "id": "01",
+   "cena": "abertura",
+   "fala": "Uma requisição de pagamento sai, a rede cai e o cliente tenta de novo. Sem cuidado, o sistema cobra duas vezes. Neste vídeo, vamos ver como a idempotency key resolve isso.",
+   "inicio": 0,
+   "duracao": 14.186,
+   "fala_s": 13.286,
+   "audio": null,
+   "legendas": null
+  },
+  {
+   "id": "02",
+   "cena": "status",
+   "tituloCena": "O caminho de uma requisição",
+   "etapas": [
+    "Cliente",
+    "Chave",
+    "Servidor",
+    "Resposta guardada"
+   ],
+   "destaque": 0,
+   "fala": "Tudo começa no cliente, que manda a requisição junto com uma chave única.",
+   "inicio": 14.186,
+   "duracao": 6.471,
+   "fala_s": 5.571,
+   "audio": null,
+   "legendas": null
+  },
+  {
+   "id": "03",
+   "cena": "status",
+   "destaque": 3,
+   "fala": "O servidor procura a chave. Se é nova, processa e guarda a resposta. Se já viu essa chave, devolve a resposta guardada, sem processar de novo.",
+   "inicio": 20.657,
+   "duracao": 12.043,
+   "fala_s": 11.143,
+   "audio": null,
+   "legendas": null
+  },
+  {
+   "id": "04",
+   "cena": "regra",
+   "n": 1,
+   "titulo": "Chave repetida não processa de novo",
+   "icone": "cadeado",
+   "texto": "Chave nova: processa e guarda chave e resposta. Chave já vista: devolve a resposta salva.",
+   "fala": "Primeira regra. Chave repetida nunca processa de novo: o servidor devolve a mesma resposta que já tinha guardado.",
+   "critica": true,
+   "inicio": 32.7,
+   "duracao": 8.614,
+   "fala_s": 7.714,
+   "audio": null,
+   "legendas": null
+  },
+  {
+   "id": "05",
+   "cena": "regra",
+   "n": 2,
+   "titulo": "Em microsserviços, a chave fica num lugar compartilhado",
+   "icone": "caixa",
+   "texto": "Guarde a chave no banco ou no Redis, com prazo de validade. Memória do servidor não serve com várias instâncias.",
+   "fala": "Segunda. Com várias instâncias, a chave precisa ficar num lugar compartilhado, como o banco ou o Redis, com prazo de validade. Na memória de um servidor só, as outras instâncias não enxergam.",
+   "inicio": 41.314,
+   "duracao": 14.614,
+   "fala_s": 13.714,
+   "audio": null,
+   "legendas": null
+  },
+  {
+   "id": "06",
+   "cena": "alertas",
+   "itens": [
+    "Mesma chave com outro corpo: recuse a requisição.",
+    "Chave gerada no backend: escolha bem os campos do cálculo.",
+    "GET, PUT e DELETE já são idempotentes: o foco é o POST."
+   ],
+   "fala": "Três cuidados. Se a mesma chave chegar com outro conteúdo, recuse. Se a chave for calculada no backend, escolha bem os campos. E lembre: o foco é o POST, porque GET, PUT e DELETE já são idempotentes.",
+   "inicio": 55.928,
+   "duracao": 16.757,
+   "fala_s": 15.857,
+   "audio": null,
+   "legendas": null
+  },
+  {
+   "id": "07",
+   "cena": "fechamento",
+   "topicos": [
+    "Uma chave única por operação",
+    "Chave repetida devolve a resposta salva",
+    "Guarde num lugar compartilhado"
+   ],
+   "fala": "Resumindo: uma chave única por operação, chave repetida devolve a resposta salva, e a chave fica num lugar compartilhado. No próximo vídeo, o versionamento de APIs.",
+   "inicio": 72.685,
+   "duracao": 12.043,
+   "fala_s": 11.143,
+   "audio": null,
+   "legendas": null
+  }
+ ],
+ "duracaoTotal": 86.228
+}

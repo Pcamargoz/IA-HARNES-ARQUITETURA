@@ -1,0 +1,25 @@
+# Obsidian - local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.trash/
+
+# Node / MCP
+.mcp/node_modules/
+.mcp/.env
+.mcp/npm-debug.log*
+node_modules/
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large attachments (optional)
+# *.pdf
+# *.mov
+# *.zip
+
+# Maestri local terminals, roles and canvas state
+.maestri/

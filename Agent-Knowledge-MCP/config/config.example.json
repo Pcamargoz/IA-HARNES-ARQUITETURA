@@ -1,0 +1,17 @@
+{
+  "roots": [
+    { "name": "cofre", "path": "/CAMINHO/PARA/Cofre do Pedro", "include": ["AI-Agent-Ecosystem", "Skills para main agents"] },
+    { "name": "harness", "path": "/CAMINHO/PARA/Harness-Architecture" }
+  ],
+  "kbRoot": "cofre",
+  "kbSubdir": "AI-Agent-Ecosystem",
+  "harnessRoot": "harness",
+  "defaultResults": 5,
+  "maxResults": 20,
+  "snippetChars": 220,
+  "maxDocChars": 6000,
+  "maxFileBytes": 1000000,
+  "indexTtlMs": 2000,
+  "denyPatterns": [],
+  "logLevel": "info"
+}

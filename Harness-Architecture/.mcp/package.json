@@ -1,0 +1,22 @@
+{
+  "name": "hermes-vault-mcp",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP server for the Hermes vault (search, read, outline, frontmatter queries, heading-chunk retrieval, health, metrics, and controlled writes).",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node test/smoke.mjs && node test/retrieve.mjs && node test/write-enabled.mjs && node test/check-links.mjs",
+    "test:readonly": "node test/smoke.mjs",
+    "test:write": "node test/write-enabled.mjs",
+    "test:retrieve": "node test/retrieve.mjs",
+    "check:links": "node test/check-links.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

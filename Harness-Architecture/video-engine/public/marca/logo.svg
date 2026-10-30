@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="120" viewBox="0 0 480 120">
+  <rect x="4" y="14" width="92" height="92" rx="22" fill="#3478A7"/>
+  <path d="M34 60 L50 76 L72 44" fill="none" stroke="#D5DD26" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="78" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700" fill="#131820">Seu Produto</text>
+</svg>

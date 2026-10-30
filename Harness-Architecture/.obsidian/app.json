@@ -1,0 +1,6 @@
+{
+  "userIgnoreFilters": [
+    "video-engine/node_modules/",
+    "video-engine/out/"
+  ]
+}

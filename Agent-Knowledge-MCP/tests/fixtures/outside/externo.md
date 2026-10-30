@@ -1,0 +1,2 @@
+# Externo
+segredoexternoxyz

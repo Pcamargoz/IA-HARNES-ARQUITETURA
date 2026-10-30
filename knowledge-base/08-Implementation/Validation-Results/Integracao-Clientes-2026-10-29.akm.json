@@ -1,0 +1,28 @@
+{
+  "roots": [
+    {
+      "name": "cofre",
+      "path": "/Users/macbook/Downloads/Cofre do Pedro",
+      "include": [
+        "AI-Agent-Ecosystem"
+      ]
+    },
+    {
+      "name": "harness",
+      "path": "/Users/macbook/Downloads/Harness-Architecture"
+    }
+  ],
+  "kbRoot": "cofre",
+  "kbSubdir": "AI-Agent-Ecosystem",
+  "harnessRoot": "harness",
+  "defaultResults": 5,
+  "maxResults": 20,
+  "snippetChars": 220,
+  "maxDocChars": 6000,
+  "maxFileBytes": 1000000,
+  "indexTtlMs": 2000,
+  "denyPatterns": [
+    "Projetos/TRADERS FAKALUM/"
+  ],
+  "logLevel": "warn"
+}

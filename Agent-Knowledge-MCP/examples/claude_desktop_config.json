@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "agent-knowledge": {
+      "command": "/Users/macbook/.nvm/versions/node/v22.23.2/bin/node",
+      "args": ["/Users/macbook/Downloads/Agent-Knowledge-MCP/dist/src/index.js"],
+      "env": {
+        "AKM_VAULT_ROOTS": "cofre=/Users/macbook/Downloads/Cofre do Pedro;harness=/Users/macbook/Downloads/Harness-Architecture",
+        "AKM_ROOT_INCLUDE": "{\"cofre\":[\"AI-Agent-Ecosystem\",\"Skills para main agents\"]}",
+        "AKM_LOG_LEVEL": "warn"
+      }
+    }
+  }
+}
